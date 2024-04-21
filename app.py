@@ -20,8 +20,8 @@ def calculate_anomalies(data):
     # Filter to obtain rows where anomalies are found
     anomalies = customer_data_long[customer_data_long['Anomaly']]
     return anomalies
-logo_path = 'C:\\Users\\User\\Desktop\\ANOMALY\\logo.png'
-st.image(logo_path, caption='EKEDC', width=550)
+logo_url = 'https://vokallond.com/wp-content/uploads/2024/04/logo.png'
+st.image(logo_url, caption='EKEDC', width=550)
 
 # Streamlit interface
 st.title('Customer Electricity Consumption Anomaly Detection App')

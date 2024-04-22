@@ -21,7 +21,7 @@ def calculate_anomalies(data):
     anomalies = customer_data_long[customer_data_long['Anomaly']]
     return anomalies
 logo_url = 'https://vokallond.com/wp-content/uploads/2024/04/logo.png'
-st.image(logo_url, caption='EKEDC', width=550)
+st.image(logo_url, width=550)
 
 # Streamlit interface
 st.title('Customer Electricity Consumption Anomaly Detection App')

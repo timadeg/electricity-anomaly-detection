@@ -24,7 +24,7 @@ logo_url = 'https://vokallond.com/wp-content/uploads/2024/04/logo.png'
 st.image(logo_url, width=550)
 
 # Streamlit interface
-st.title('Customer Electricity Consumption Anomaly Detection App')
+st.title('Customer Electricity Consumption Anomaly Detection Platform')
 
 uploaded_file = st.file_uploader("Choose a CSV file with consumption data", type="csv")
 if uploaded_file is not None:

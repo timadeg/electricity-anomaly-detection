@@ -26,10 +26,7 @@ st.image(logo_url, width=550)
 # Streamlit interface
 st.title('Customer Electricity Consumption Anomaly Detection Platform')
 
-# Add a link to download sample data
-st.markdown("""
-You can download a [sample CSV file](https://vokallond.com/wp-content/uploads/2024/08/consumption-data.csv) to test the app.
-""")
+
 
 uploaded_file = st.file_uploader("Choose a CSV file with consumption data", type="csv")
 if uploaded_file is not None:
@@ -40,3 +37,9 @@ if uploaded_file is not None:
         st.dataframe(anomalies)
         # Optional: Provide an option to download the results
         st.download_button(label="Download Anomalies as CSV", data=anomalies.to_csv(index=False), file_name='anomalies.csv', mime='text/csv')
+
+
+# Add a link to download sample data
+st.markdown("""
+You can download a [sample CSV file](https://vokallond.com/wp-content/uploads/2024/08/consumption-data.csv) to test the app.
+""")

@@ -29,7 +29,7 @@ st.title('Customer Electricity Consumption Anomaly Detection Platform')
 # Add a link to download sample data
 st.markdown("""
 ### Sample Data
-You can download a [sample CSV file](https://github.com/timadeg/electricity-anomaly-detection/blob/main/consumption%20data.csv) to test the app.
+You can download a [sample CSV file](https://vokallond.com/wp-content/uploads/2024/08/consumption-data.csv) to test the app.
 """)
 
 uploaded_file = st.file_uploader("Choose a CSV file with consumption data", type="csv")
